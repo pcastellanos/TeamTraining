@@ -1,5 +1,7 @@
 using SOLID.Single_Responsibility;
+using SOLID.Single_Responsibility.Services;
 using System;
+using static System.Console;
 
 namespace SOLID
 {
@@ -36,10 +38,19 @@ namespace SOLID
                 case "1":
                     SingleResponsibility();
                     break;
-
+                case "2":
+                    OpenClosed();
+                    break;
                 default:
                     break;
             }
+        }
+
+        private static void OpenClosed()
+        {
+            PDFPrinter printer = new PDFPrinter();
+            printer.GenerateSurveyPDF(29);
+            ReadLine();
         }
 
         /// <summary>
