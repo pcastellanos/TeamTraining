@@ -54,7 +54,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OpenClosed\Services\PDFPrinter.cs" />
+    <Compile Include="OpenClosed\BusinessLogic\BasicMessagePrinter.cs" />
+    <Compile Include="OpenClosed\BusinessLogic\FriendlyMessagePrinter.cs" />
+    <Compile Include="OpenClosed\Services\IPrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Single Responsibility\Business\User.cs" />

@@ -1,3 +1,4 @@
+using SOLID.OpenClosed.BusinessLogic;
 using SOLID.OpenClosed.Services;
 using SOLID.Single_Responsibility;
 using System;
@@ -48,8 +49,15 @@ namespace SOLID
 
         private static void OpenClosed()
         {
-            PDFPrinter printer = new PDFPrinter();
-            printer.GenerateSurveyPDF(29);
+            IPrinter friendlyPrinter = new FriendlyMessagePrinter();
+            WriteLine("Friendly implementation");
+            ReadLine();
+            friendlyPrinter.GenerateSurveyPDF(29);
+            ReadLine();
+            IPrinter basicPrinter = new BasicMessagePrinter();
+            WriteLine("Basic implementation");
+            ReadLine();
+            basicPrinter.GenerateSurveyPDF(40);
             ReadLine();
         }
 

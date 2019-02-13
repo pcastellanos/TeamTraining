@@ -1,9 +1,10 @@
-﻿using System;
-using System.Threading;
+﻿using SOLID.OpenClosed.Services;
 using static System.Console;
-namespace SOLID.OpenClosed.Services
+using System.Threading;
+
+namespace SOLID.OpenClosed.BusinessLogic
 {
-    public class PDFPrinter
+    public class FriendlyMessagePrinter : IPrinter
     {
         public void GenerateSurveyPDF(int id)
         {
