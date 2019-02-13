@@ -1,10 +1,9 @@
-﻿using SOLID.Single_Responsibility.Services;
+﻿using System;
 using System.Threading;
 using static System.Console;
-
-namespace SOLID.Single_Responsibility.Business
+namespace SOLID.OpenClosed.Services
 {
-   public class BasicMessagePrinter : IPrinter
+    public class PDFPrinter
     {
         public void GenerateSurveyPDF(int id)
         {
