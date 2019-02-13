@@ -7,14 +7,14 @@ namespace SOLID.Single_Responsibility.Services
     {
         public void GenerateSurveyPDF(int id)
         {
-            WriteLine($"Printing survey {id}");
+            WriteLine($"Hi!!! I'm printing the survey {id}");
             for (int i = 0; i < 5; i++)
             {
-                WriteLine("Working....");
+                WriteLine("give me a minute, I'm finishing....");
                 Thread.Sleep(500);
             }
 
-            WriteLine($"PDF of survey {id} is ready to be downloaded!!");
+            WriteLine($"PDF is ready, enjoy it!!!");
         }
     }
 }
