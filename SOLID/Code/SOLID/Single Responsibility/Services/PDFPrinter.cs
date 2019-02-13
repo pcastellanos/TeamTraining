@@ -3,18 +3,8 @@ using System.Threading;
 using static System.Console;
 namespace SOLID.Single_Responsibility.Services
 {
-    public class PDFPrinter
+    public interface IPrinter
     {
-        public void GenerateSurveyPDF(int id)
-        {
-            WriteLine($"Hi!!! I'm printing the survey {id}");
-            for (int i = 0; i < 5; i++)
-            {
-                WriteLine("give me a minute, I'm finishing....");
-                Thread.Sleep(500);
-            }
-
-            WriteLine($"PDF is ready, enjoy it!!!");
-        }
+        void GenerateSurveyPDF(int id);
     }
 }
