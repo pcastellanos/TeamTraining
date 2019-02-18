@@ -54,6 +54,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Liskov\CalculateAreaBadImplementation.cs" />
+    <Compile Include="Liskov\CalculateAreaBetterImplementation.cs" />
     <Compile Include="OpenClosed\BusinessLogic\BasicMessagePrinter.cs" />
     <Compile Include="OpenClosed\BusinessLogic\FriendlyMessagePrinter.cs" />
     <Compile Include="OpenClosed\Services\IPrinter.cs" />

@@ -2,6 +2,7 @@ using SOLID.OpenClosed.BusinessLogic;
 using SOLID.OpenClosed.Services;
 using SOLID.Single_Responsibility;
 using System;
+using SOLID.Liskov;
 using static System.Console;
 
 namespace SOLID
@@ -42,6 +43,9 @@ namespace SOLID
                 case "2":
                     OpenClosed();
                     break;
+                case "3":
+                    Liskov();
+                    break;
                 default:
                     break;
             }
@@ -67,6 +71,17 @@ namespace SOLID
         private static void SingleResponsibility()
         {
             SRTestCase.CreateUser();
+        }
+
+        private static void Liskov()
+        {
+            WriteLine("Bad implementation, calculate area");
+            ReadLine();
+            CalculateAreaBadImplementation.CalculateArea();
+
+            WriteLine("Good implementation, calculate area");
+            ReadLine();
+            CalculateAreaBetterImplementation.CalculateArea();
         }
     }
 }
