@@ -54,6 +54,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfaceSegregation\Car.cs" />
+    <Compile Include="InterfaceSegregation\ITransportation.cs" />
+    <Compile Include="InterfaceSegregation\Motorcycle.cs" />
+    <Compile Include="InterfaceSegregation\Point.cs" />
     <Compile Include="Liskov\CalculateAreaBadImplementation.cs" />
     <Compile Include="Liskov\CalculateAreaBetterImplementation.cs" />
     <Compile Include="OpenClosed\BusinessLogic\BasicMessagePrinter.cs" />

@@ -4,6 +4,7 @@ using SOLID.Single_Responsibility;
 using System;
 using SOLID.Liskov;
 using static System.Console;
+using SOLID.InterfaceSegregation;
 
 namespace SOLID
 {
@@ -46,9 +47,29 @@ namespace SOLID
                 case "3":
                     Liskov();
                     break;
+                case "4":
+                    InterfaceSegregation();
+                    break;
                 default:
                     break;
             }
+        }
+
+        private static void InterfaceSegregation()
+        {
+            Point pStart = new Point(10, 50);
+            Point pEnd = new Point(150, 59);
+
+            ITransportation car = new Car();
+            ITransportation moto = new Motorcycle();
+            WriteLine("Move Car");
+            car.Move(pStart, pEnd);
+            ReadLine();
+
+            WriteLine("Move Motorcycle");
+            moto.Move(pStart, pEnd);
+            ReadLine();
+
         }
 
         private static void OpenClosed()
