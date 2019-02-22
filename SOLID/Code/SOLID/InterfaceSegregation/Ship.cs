@@ -2,11 +2,11 @@
 
 namespace SOLID.InterfaceSegregation
 {
-    public class Ship : IMarineTransportation
+    public class Ship : ITransportation
     {
-        public void DropAnchor()
+        public void ChangeWheels()
         {
-            WriteLine($"Dropping Anchor!!!");
+            throw new System.NotImplementedException();
         }
 
         public void Move(Point from, Point to)

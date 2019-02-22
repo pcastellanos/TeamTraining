@@ -55,8 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InterfaceSegregation\Car.cs" />
-    <Compile Include="InterfaceSegregation\IGroudTransportation.cs" />
-    <Compile Include="InterfaceSegregation\IMarineTransportation.cs" />
     <Compile Include="InterfaceSegregation\ITransportation.cs" />
     <Compile Include="InterfaceSegregation\Motorcycle.cs" />
     <Compile Include="InterfaceSegregation\Point.cs" />

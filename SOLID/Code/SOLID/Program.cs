@@ -60,28 +60,29 @@ namespace SOLID
             Point pStart = new Point(10, 50);
             Point pEnd = new Point(150, 59);
 
-            IGroudTransportation car = new Car();
-            IGroudTransportation moto = new Motorcycle();
-            IMarineTransportation ship = new Ship();
+            ITransportation car = new Car();
+            ITransportation moto = new Motorcycle();
+            ITransportation ship = new Ship();
+
             WriteLine("Move Car");
             car.Move(pStart, pEnd);
             ReadLine();
-            WriteLine("Now changing wheels");
+            WriteLine("changing wheels");
             car.ChangeWheels();
             ReadLine();
 
             WriteLine("Move Motorcycle");
             moto.Move(pStart, pEnd);
             ReadLine();
-            WriteLine("Now changing wheels");
+            WriteLine("changing wheels");
             moto.ChangeWheels();
             ReadLine();
 
             WriteLine("Move Ship");
             ship.Move(pStart, pEnd);
             ReadLine();
-            WriteLine("Now Dropping anchor");
-            ship.DropAnchor();
+            WriteLine("changing wheels");
+            ship.ChangeWheels();
             ReadLine();
 
         }

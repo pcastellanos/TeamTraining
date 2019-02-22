@@ -1,15 +1,12 @@
-﻿using System.Threading;
-using static System.Console;
+﻿using static System.Console;
 
 namespace SOLID.InterfaceSegregation
 {
-    public class Car : IGroudTransportation
+    public class Car : ITransportation
     {
         public void ChangeWheels()
         {
-            WriteLine($"Changing the 4 wheels.....");
-            Thread.Sleep(500);
-            WriteLine($"This car is ready to go :D");
+            WriteLine($"Changing 4 wheels");
         }
 
         public void Move(Point from, Point to)

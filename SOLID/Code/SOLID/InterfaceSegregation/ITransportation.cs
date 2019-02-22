@@ -9,6 +9,8 @@ namespace SOLID.InterfaceSegregation
     public interface ITransportation
     {
         void Move(Point from, Point to);
+        void ChangeWheels();
+
     }
 }
 
