@@ -129,7 +129,7 @@ namespace SOLID
         /// </summary>
         private static void DependencyInversion() {
 
-            DipTest.RunExampleDi();
+            DipTest.RunExampleDip();
 
         }
     }

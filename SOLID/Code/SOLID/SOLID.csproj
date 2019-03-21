@@ -54,11 +54,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInversion\Bad\Class1.cs" />
-    <Compile Include="DependencyInversion\Better\Class1.cs" />
+    <Compile Include="DependencyInversion\Bad\Logic.cs" />
+    <Compile Include="DependencyInversion\Bad\Persistence\SqlDatabase.cs" />
+    <Compile Include="DependencyInversion\Better\BusinessLogic\AbstractClass\LogicAbstractBetter.cs" />
+    <Compile Include="DependencyInversion\Better\BusinessLogic\LogicOneBetter.cs" />
+    <Compile Include="DependencyInversion\Better\BusinessLogic\LogicTwoBetter.cs" />
+    <Compile Include="DependencyInversion\Better\Persistence\Interfaces\IDatabaseBetter.cs" />
+    <Compile Include="DependencyInversion\Better\Persistence\MongoDatabaseBetter.cs" />
+    <Compile Include="DependencyInversion\Better\Persistence\OracleDatabaseBetter.cs" />
+    <Compile Include="DependencyInversion\Better\Persistence\SqlDatabaseBetter.cs" />
+    <Compile Include="DependencyInversion\DependencyInjection.cs" />
     <Compile Include="DependencyInversion\DipTest.cs" />
-    <Compile Include="DependencyInversion\Entity\Class1.cs" />
-    <Compile Include="DependencyInversion\Good\Class1.cs" />
+    <Compile Include="DependencyInversion\Entity\PeopleEntity.cs" />
+    <Compile Include="DependencyInversion\Good\Enumeration\EnumProvider.cs" />
+    <Compile Include="DependencyInversion\Good\FactoryProvider.cs" />
+    <Compile Include="DependencyInversion\Good\LogicGood.cs" />
+    <Compile Include="DependencyInversion\Good\Persistence\Interfaces\IDatabaseGood.cs" />
+    <Compile Include="DependencyInversion\Good\Persistence\MongoDatabase.cs" />
+    <Compile Include="DependencyInversion\Good\Persistence\SqlDatabaseGood.cs" />
     <Compile Include="InterfaceSegregation\Car.cs" />
     <Compile Include="InterfaceSegregation\ITransportation.cs" />
     <Compile Include="InterfaceSegregation\Motorcycle.cs" />

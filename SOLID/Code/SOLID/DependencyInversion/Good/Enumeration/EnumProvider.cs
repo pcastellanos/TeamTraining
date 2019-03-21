@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID.DependencyInversion.Good
+namespace SOLID.DependencyInversion.Good.Enumeration
 {
-    class Class1
+    public enum EnumProvider
     {
+        SqlDatabase,
+        MongoDatabase
     }
 }

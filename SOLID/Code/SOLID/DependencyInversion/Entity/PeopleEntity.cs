@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SOLID.DependencyInversion.Entity
 {
-    class Class1
+    public class PeopleEntity
     {
+        public string  Name { get; set; }
+        public string Address { get; set; }
     }
 }
