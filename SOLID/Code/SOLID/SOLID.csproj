@@ -54,13 +54,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependencyInversion\Better\BusinessLogic\Interfaces\AbstractLogic.cs" />
-    <Compile Include="DependencyInversion\Better\BusinessLogic\LogicBetter.cs" />
-    <Compile Include="DependencyInversion\Better\Persistence\Interfaces\IDatabaseBetter.cs" />
-    <Compile Include="DependencyInversion\Better\Persistence\SqlDatabase.cs" />
-    <Compile Include="DependencyInversion\DependencyInjection.cs" />
+    <Compile Include="DependencyInversion\Bad\Class1.cs" />
+    <Compile Include="DependencyInversion\Better\Class1.cs" />
     <Compile Include="DependencyInversion\DipTest.cs" />
-    <Compile Include="DependencyInversion\Entity\PeopleEntity.cs" />
+    <Compile Include="DependencyInversion\Entity\Class1.cs" />
+    <Compile Include="DependencyInversion\Good\Class1.cs" />
     <Compile Include="InterfaceSegregation\Car.cs" />
     <Compile Include="InterfaceSegregation\ITransportation.cs" />
     <Compile Include="InterfaceSegregation\Motorcycle.cs" />
@@ -88,9 +86,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DependencyInversion\Bad\" />
-    <Folder Include="DependencyInversion\Good\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
