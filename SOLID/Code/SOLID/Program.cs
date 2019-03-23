@@ -5,6 +5,7 @@ using System;
 using SOLID.Liskov;
 using static System.Console;
 using SOLID.InterfaceSegregation;
+using SOLID.DependencyInversion;
 
 namespace SOLID
 {
@@ -49,6 +50,9 @@ namespace SOLID
                     break;
                 case "4":
                     InterfaceSegregation();
+                    break;
+                case "5":
+                    DependencyInversion();
                     break;
                 default:
                     break;
@@ -118,6 +122,15 @@ namespace SOLID
             WriteLine("Good implementation, calculate area");
             ReadLine();
             CalculateAreaBetterImplementation.CalculateArea();
+        }
+
+        /// <summary>
+        /// Dependency inversion principle (DPI)
+        /// </summary>
+        private static void DependencyInversion() {
+
+            DipTest.RunExampleDip();
+
         }
     }
 }
