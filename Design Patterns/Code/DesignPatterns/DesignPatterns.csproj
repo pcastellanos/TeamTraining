@@ -6,12 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="2.Structural\Facade\Client\ClientTestCase.cs" />
+    <Compile Remove="2.Structural\Facade\Client\ClientTestCase.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="1.Creational\" />
-    <Folder Include="2.Structural\Facade\Business\Logic\Interfaces\" />
   </ItemGroup>
 
 </Project>

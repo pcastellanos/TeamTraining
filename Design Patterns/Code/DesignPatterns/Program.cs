@@ -79,7 +79,7 @@ namespace DesignPatterns
             switch (Console.ReadLine())
             {
                 case "1":
-                    ClientTestCase.Process();
+                    Client.Process();
                     break;
                 case "2":
 
