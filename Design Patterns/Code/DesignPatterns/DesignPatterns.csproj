@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <Folder Include="1.Creational\" />
-    <Folder Include="2.Structural\" />
+    <Folder Include="2.Structural\Facade\Business\Logic\Interfaces\" />
   </ItemGroup>
 
 </Project>
