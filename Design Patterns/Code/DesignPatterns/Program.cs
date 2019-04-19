@@ -1,5 +1,6 @@
 ﻿using DesignPatterns._2.Structural.Facade.Client;
 using DesignPatterns._3.Behavioural.Observer;
+using DesignPatterns._3.Behavioural.Strategy;
 using System;
 
 namespace DesignPatterns
@@ -36,6 +37,7 @@ namespace DesignPatterns
 
                     StructuralMenu();
                     break;
+
                 case "3":
                     BehaviouralMenu();
                     break;
@@ -53,22 +55,22 @@ namespace DesignPatterns
             Console.WriteLine("************************** Behavioural Design Patterns **************************");
             Console.WriteLine("Select one option to study: ");
             Console.WriteLine("1. Observer ");
+            Console.WriteLine("2. Strategy ");
 
             switch (Console.ReadLine())
             {
                 case "1":
                     ObserverTestCase.PublishNews();
                     break;
-                case "2":
-                    
 
+                case "2":
+                    StrategyTestCase.GetBeerPrice();
                     break;
 
                 default:
                     break;
             }
         }
-
 
         private static void StructuralMenu()
         {
@@ -81,6 +83,7 @@ namespace DesignPatterns
                 case "1":
                     Client.Process();
                     break;
+
                 case "2":
 
                     break;
