@@ -1,4 +1,5 @@
-﻿using DesignPatterns._2.Structural.Facade.Client;
+﻿using DesignPatterns._2.Structural.Adapter;
+using DesignPatterns._2.Structural.Facade.Client;
 using DesignPatterns._3.Behavioural.Observer;
 using DesignPatterns._3.Behavioural.Strategy;
 using System;
@@ -77,6 +78,7 @@ namespace DesignPatterns
             Console.WriteLine("************************** Structural Design Patterns **************************");
             Console.WriteLine("Select one option to study: ");
             Console.WriteLine("1. Facade ");
+            Console.WriteLine("2. Adapter ");
 
             switch (Console.ReadLine())
             {
@@ -85,7 +87,8 @@ namespace DesignPatterns
                     break;
 
                 case "2":
-
+                    ClientApplication.Process();
+                    Console.ReadLine();
                     break;
 
                 default:
