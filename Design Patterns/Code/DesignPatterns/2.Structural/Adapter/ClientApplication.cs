@@ -18,12 +18,13 @@ namespace DesignPatterns._2.Structural.Adapter
                 AmountLoan = 900000
             };
 
-            List<IBank> listaBancos = new List<IBank>();
-            listaBancos.Add(new BankDavivienda());
-            listaBancos.Add(new BankAgrario());
-          
+            List<IBank> listBank= new List<IBank>();
+            listBank.Add(new BankDavivienda());
+            listBank.Add(new BankAgrario());
+            listBank.Add(new BankAmericanAdapter());
 
-            foreach (var item in listaBancos)
+
+            foreach (var item in listBank)
             {
                 var response = item.ProcessLoan(request);
 
