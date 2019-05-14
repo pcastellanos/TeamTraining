@@ -6,6 +6,8 @@ using System;
 
 namespace DesignPatterns
 {
+    using _4._Factory;
+
     internal class Program
     {
         private static void Main(string[] args)
@@ -34,8 +36,10 @@ namespace DesignPatterns
         {
             switch (option)
             {
+                case "1":
+                    CreationalMenu();
+                    break;
                 case "2":
-
                     StructuralMenu();
                     break;
 
@@ -92,6 +96,20 @@ namespace DesignPatterns
                     break;
 
                 default:
+                    break;
+            }
+        }
+
+        private static void CreationalMenu()
+        {
+            Console.WriteLine("************************** Creational Design Patterns **************************");
+            Console.WriteLine("Select one option to study: ");
+            Console.WriteLine("1. Factory ");
+
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    FactoryTestCase.DrawShapes();
                     break;
             }
         }
