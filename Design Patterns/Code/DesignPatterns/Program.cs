@@ -76,6 +76,7 @@ namespace DesignPatterns
 
                 default:
                     Filter.FilterUsers();
+                    Console.ReadLine();
                     break;
             }
         }

@@ -16,5 +16,10 @@ namespace DesignPatterns._3.Behavioural.ChainOfResponsability.Models
         public string Phone { get; set; }
         public string Address { get; set; }
         public Fruits FavoriteFruit { get; set; }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}, UnreadMessage: {UnreadMessage}, IsActive: {IsActive}, Eye Color: {EyeColor}, Age: {Age}";
+        }
     }
 }
