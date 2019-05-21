@@ -2,6 +2,7 @@
 using DesignPatterns._2.Structural.Facade.Client;
 using DesignPatterns._3.Behavioural.Observer;
 using DesignPatterns._3.Behavioural.Strategy;
+using DesignPatterns._3.Behavioural.ChainOfResponsability;
 using System;
 
 namespace DesignPatterns
@@ -61,6 +62,7 @@ namespace DesignPatterns
             Console.WriteLine("Select one option to study: ");
             Console.WriteLine("1. Observer ");
             Console.WriteLine("2. Strategy ");
+            Console.WriteLine("3. Chain Of Responsability");
 
             switch (Console.ReadLine())
             {
@@ -73,6 +75,7 @@ namespace DesignPatterns
                     break;
 
                 default:
+                    Filter.FilterUsers();
                     break;
             }
         }
