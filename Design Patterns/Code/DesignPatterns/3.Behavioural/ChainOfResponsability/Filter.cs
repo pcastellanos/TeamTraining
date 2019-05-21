@@ -13,9 +13,14 @@ namespace DesignPatterns._3.Behavioural.ChainOfResponsability
         public static void FilterUsers()
         { 
             List<User> users= JsonConvert.DeserializeObject<List<User>>(Resource1.Users);
-            users = users.Where(user => user.IsActive).ToList();
-            users = users.Where(user => user.Age > 20).ToList();
-            Print(users);
+
+            
+            IUserFilter nullableFilter = new NullableFilter(null);
+            IUserFilter ageFilter = new AgeFilter(nullableFilter);
+            IUserFilter activeFilter = new ActiveFilter(ageFilter);
+
+            // activeFilter >> ageFilter >> nullableFilter
+            Print(activeFilter.ExecuteFilter(users));
         }
 
         private static void Print(List<User> users)
