@@ -1,0 +1,12 @@
+C:\Globant\CSharp\CSharpEight\bin\Debug\netcoreapp3.0\CSharpEight.exe
+C:\Globant\CSharp\CSharpEight\bin\Debug\netcoreapp3.0\CSharpEight.deps.json
+C:\Globant\CSharp\CSharpEight\bin\Debug\netcoreapp3.0\CSharpEight.runtimeconfig.json
+C:\Globant\CSharp\CSharpEight\bin\Debug\netcoreapp3.0\CSharpEight.runtimeconfig.dev.json
+C:\Globant\CSharp\CSharpEight\bin\Debug\netcoreapp3.0\CSharpEight.dll
+C:\Globant\CSharp\CSharpEight\bin\Debug\netcoreapp3.0\CSharpEight.pdb
+C:\Globant\CSharp\CSharpEight\obj\Debug\netcoreapp3.0\CSharpEight.csprojAssemblyReference.cache
+C:\Globant\CSharp\CSharpEight\obj\Debug\netcoreapp3.0\CSharpEight.csproj.CoreCompileInputs.cache
+C:\Globant\CSharp\CSharpEight\obj\Debug\netcoreapp3.0\CSharpEight.AssemblyInfoInputs.cache
+C:\Globant\CSharp\CSharpEight\obj\Debug\netcoreapp3.0\CSharpEight.AssemblyInfo.cs
+C:\Globant\CSharp\CSharpEight\obj\Debug\netcoreapp3.0\CSharpEight.dll
+C:\Globant\CSharp\CSharpEight\obj\Debug\netcoreapp3.0\CSharpEight.pdb

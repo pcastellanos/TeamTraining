@@ -1,0 +1,67 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\ozambrano\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Globant\\CSharp\\CSharpEight\\CSharpEight.csproj",
+      "projectName": "CSharpEight",
+      "projectPath": "C:\\Globant\\CSharp\\CSharpEight\\CSharpEight.csproj",
+      "packagesPath": "C:\\Users\\ozambrano\\.nuget\\packages\\",
+      "outputPath": "C:\\Globant\\CSharp\\CSharpEight\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\ozambrano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {},
+        "https://pkgs.dev.azure.com/apps-its-us-deloitte/_packaging/USITSDAS-Private-USAParent/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": [
+          "Microsoft.NETCore.App"
+        ]
+      }
+    }
+  }
+}
