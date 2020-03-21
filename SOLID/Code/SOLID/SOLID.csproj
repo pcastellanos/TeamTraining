@@ -63,11 +63,11 @@
     <Compile Include="DependencyInversion\Better\Persistence\MongoDatabaseBetter.cs" />
     <Compile Include="DependencyInversion\Better\Persistence\OracleDatabaseBetter.cs" />
     <Compile Include="DependencyInversion\Better\Persistence\SqlDatabaseBetter.cs" />
-    <Compile Include="DependencyInversion\DependencyInjection.cs" />
+    <Compile Include="DependencyInversion\Better\DependencyInjection.cs" />
     <Compile Include="DependencyInversion\DipTest.cs" />
     <Compile Include="DependencyInversion\Entity\PeopleEntity.cs" />
-    <Compile Include="DependencyInversion\Good\Enumeration\EnumProvider.cs" />
-    <Compile Include="DependencyInversion\Good\FactoryProvider.cs" />
+    <Compile Include="DependencyInversion\Good\Enumeration\DatabaseProvider.cs" />
+    <Compile Include="DependencyInversion\Good\FactoryDatabaseProvider.cs" />
     <Compile Include="DependencyInversion\Good\LogicGood.cs" />
     <Compile Include="DependencyInversion\Good\Persistence\Interfaces\IDatabaseGood.cs" />
     <Compile Include="DependencyInversion\Good\Persistence\MongoDatabase.cs" />

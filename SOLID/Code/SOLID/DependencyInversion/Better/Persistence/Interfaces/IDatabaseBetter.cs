@@ -1,14 +1,16 @@
 ﻿using SOLID.DependencyInversion.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SOLID.DependencyInversion.Better.Persistence.Interfaces
 {
+    /// <summary>
+    /// Defines contracts to access to the Database
+    /// </summary>
     public interface IDatabaseBetter
     {
+        /// <summary>
+        /// Persists info to the database
+        /// </summary>
+        /// <param name="peopleEntity">People information</param>
         void Persist(PeopleEntity peopleEntity);
     }
 }

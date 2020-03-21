@@ -1,38 +1,33 @@
 ﻿using SOLID.DependencyInversion.Bad;
-using SOLID.DependencyInversion.Better.BusinessLogic.AbstractClass;
 using SOLID.DependencyInversion.Entity;
-using SOLID.DependencyInversion.Good;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Unity;
 
 namespace SOLID.DependencyInversion
 {
+    /// <summary>
+    /// Class to show Dependency Inversion Test Case
+    /// </summary>
     public class DipTest
     {
         public static void RunExampleDip() {
 
             var peopleEntity = new PeopleEntity
             {
-                Name = "John",
+                Name = "John Henao",
                 Address = "Calle 31"
-
             };
 
             // Bad
-            // new Logic().Operation(peopleEntity);
+            new Logic().AddPeople(peopleEntity);
 
             // Good
-            //var provider = new FactoryProvider(Good.Enumeration.EnumProvider.MongoDatabase).GetProvider();
-            //new LogicGood(provider).Operation(peopleEntity);
+            //var provider = new FactoryDatabaseProvider(DatabaseProvider.SqlDatabase).GetProvider();
+            //new LogicGood(provider).AddPeople(peopleEntity);
 
             // Better
-            DependencyInjection.Configure();
-            LogicAbstractBetter logic = DependencyInjection.MainUnityContainer.Resolve<LogicAbstractBetter>();
-            logic.Operation(peopleEntity);
+            //DependencyInjection.Configure();
+            //LogicAbstractBetter logic = DependencyInjection.MainUnityContainer.Resolve<LogicAbstractBetter>();
+            //logic.AddPeople(peopleEntity);
 
             Console.ReadLine();
         }

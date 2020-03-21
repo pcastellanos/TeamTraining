@@ -1,24 +1,26 @@
 ﻿using SOLID.DependencyInversion.Bad.Persistence;
 using SOLID.DependencyInversion.Entity;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SOLID.DependencyInversion.Bad
 {
+    /// <summary>
+    /// Business logic to simulate saving info to the database
+    /// </summary>
     public class Logic
     {
-
-        public void Operation(PeopleEntity peopleEntity) {
-
+        /// <summary>
+        /// Adds people to the database
+        /// </summary>
+        /// <param name="peopleEntity">People information</param>
+        public void AddPeople(PeopleEntity peopleEntity)
+        {
             if (string.IsNullOrEmpty(peopleEntity.Address))
+            {
                 throw new Exception("Address is null");
-
+            }
 
             new SqlDatabase().Persist(peopleEntity);
-
         }
     }
 }

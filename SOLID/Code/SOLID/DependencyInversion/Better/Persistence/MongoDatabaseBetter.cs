@@ -1,18 +1,20 @@
 ﻿using SOLID.DependencyInversion.Better.Persistence.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SOLID.DependencyInversion.Entity;
+using System;
 
 namespace SOLID.DependencyInversion.Better.Persistence
 {
+    /// <summary>
+    /// Class to access to the Mongo Database
+    /// </summary>
     public class MongoDatabaseBetter : IDatabaseBetter
     {
+        /// <summary>
+        /// View documentation of <see cref="IDatabaseBetter.Persist(PeopleEntity)"/> interface
+        /// </summary>
         public void Persist(PeopleEntity peopleEntity)
         {
-            Console.WriteLine("Data saved in Mongo database better");
+            Console.WriteLine($"Data for: {peopleEntity.Name} - saved in Mongo database Better");
         }
     }
 }

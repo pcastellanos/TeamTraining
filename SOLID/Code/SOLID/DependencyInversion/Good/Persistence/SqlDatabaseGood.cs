@@ -1,18 +1,20 @@
-﻿using SOLID.DependencyInversion.Good.Persistence.Interfaces;
+﻿using SOLID.DependencyInversion.Entity;
+using SOLID.DependencyInversion.Good.Persistence.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SOLID.DependencyInversion.Entity;
 
 namespace SOLID.DependencyInversion.Good.Persistence
 {
+    /// <summary>
+    /// Class to access to the SQL Database
+    /// </summary>
     public class SqlDatabaseGood : IDatabaseGood
     {
+        /// <summary>
+        /// View documentation of <see cref="IDatabaseGood.Persist(PeopleEntity)"/> interface
+        /// </summary>
         public void Persist(PeopleEntity peopleEntity)
         {
-            Console.WriteLine("Data saved in SqlDatabase Good");
+            Console.WriteLine($"Data for: {peopleEntity.Name} - saved in SqlDatabase Good");
         }
     }
 }

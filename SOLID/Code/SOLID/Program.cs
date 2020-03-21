@@ -60,11 +60,11 @@ namespace SOLID
         }
 
         /// <summary>
-        /// Generates a Test Case for the Interface Segregation
+        /// Generates a Test Case for the SingleResponsibility
         /// </summary>
-        private static void InterfaceSegregation()
+        private static void SingleResponsibility()
         {
-            ISTestCase.Start();
+            SRTestCase.CreateUser();
         }
 
         private static void OpenClosed()
@@ -81,14 +81,6 @@ namespace SOLID
             ReadLine();
         }
 
-        /// <summary>
-        /// Generates a Test Case for the SingleResponsibility
-        /// </summary>
-        private static void SingleResponsibility()
-        {
-            SRTestCase.CreateUser();
-        }
-
         private static void Liskov()
         {
             WriteLine("Bad implementation, calculate area");
@@ -101,12 +93,19 @@ namespace SOLID
         }
 
         /// <summary>
+        /// Generates a Test Case for the Interface Segregation
+        /// </summary>
+        private static void InterfaceSegregation()
+        {
+            ISTestCase.Start();
+        }
+
+        /// <summary>
         /// Dependency inversion principle (DPI)
         /// </summary>
         private static void DependencyInversion() {
 
             DipTest.RunExampleDip();
-
         }
     }
 }

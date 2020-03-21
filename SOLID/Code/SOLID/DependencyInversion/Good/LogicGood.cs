@@ -1,31 +1,40 @@
 ﻿using SOLID.DependencyInversion.Entity;
 using SOLID.DependencyInversion.Good.Persistence.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SOLID.DependencyInversion.Good
 {
+    /// <summary>
+    /// Business logic to simulate saving info to the database
+    /// </summary>
     public class LogicGood
     {
+        /// <summary>
+        /// Gets the Database provider instance
+        /// </summary>
         IDatabaseGood _databaseGood;
-        public LogicGood(IDatabaseGood databaseGood) {
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogicGood"/> class
+        /// </summary>
+        /// <param name="databaseGood">Database provider instance</param>
+        public LogicGood(IDatabaseGood databaseGood)
+        {
             _databaseGood = databaseGood;
         }
 
-        public void Operation(PeopleEntity peopleEntity)
+        /// <summary>
+        /// Adds people to the database
+        /// </summary>
+        /// <param name="peopleEntity">People information</param>
+        public void AddPeople(PeopleEntity peopleEntity)
         {
-
-
             if (string.IsNullOrEmpty(peopleEntity.Address))
+            {
                 throw new Exception("Address is null");
-
-
+            }
 
             _databaseGood.Persist(peopleEntity);
-
         }
     }
 }
