@@ -16,8 +16,8 @@ namespace SOLID.InterfaceSegregation
             Point pStart = new Point(10, 50);
             Point pEnd = new Point(150, 59);
 
-            IConveyance car = new Car();
-            IConveyance moto = new Motorcycle();
+            Car car = new Car();
+            Motorcycle moto = new Motorcycle();
 
             Console.WriteLine("Move Car");
             car.Move(pStart, pEnd);
@@ -34,7 +34,7 @@ namespace SOLID.InterfaceSegregation
             Console.ReadLine();
 
             // Bad Case
-            IConveyance ship = new Ship();
+            Ship ship = new Ship();
 
             Console.WriteLine("Move Ship");
             ship.Move(pStart, pEnd);
@@ -42,6 +42,16 @@ namespace SOLID.InterfaceSegregation
             Console.WriteLine("changing wheels");
             ship.ChangeWheels();
             Console.ReadLine();
+
+            // Good Case
+            //Ship ship = new Ship();
+
+            //Console.WriteLine("Move Ship");
+            //ship.Move(pStart, pEnd);
+            //Console.ReadLine();
+            //Console.WriteLine("Dropping anchors...");
+            //ship.DropAnchor();
+            //Console.ReadLine();
         }
     }
 }
