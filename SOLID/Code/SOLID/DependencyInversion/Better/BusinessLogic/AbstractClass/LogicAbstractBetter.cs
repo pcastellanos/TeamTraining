@@ -26,6 +26,6 @@ namespace SOLID.DependencyInversion.Better.BusinessLogic.AbstractClass
         /// Adds people to the database
         /// </summary>
         /// <param name="peopleEntity">People information</param>
-        public abstract void AddPeople(PeopleEntity peopleEntity);
+        public abstract void Operation(PeopleEntity peopleEntity);
     }
 }

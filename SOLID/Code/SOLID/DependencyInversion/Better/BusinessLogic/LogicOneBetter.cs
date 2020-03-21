@@ -19,9 +19,9 @@ namespace SOLID.DependencyInversion.Better.BusinessLogic
         }
 
         /// <summary>
-        /// View documention of the <see cref="LogicAbstractBetter.AddPeople(PeopleEntity)"/> clas
+        /// View documention of the <see cref="LogicAbstractBetter.Operation(PeopleEntity)"/> clas
         /// </summary>
-        public override void AddPeople(PeopleEntity peopleEntity)
+        public override void Operation(PeopleEntity peopleEntity)
         {
             if (string.IsNullOrEmpty(peopleEntity.Name))
             {

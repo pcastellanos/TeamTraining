@@ -27,7 +27,7 @@ namespace SOLID.DependencyInversion.Good
         /// Adds people to the database
         /// </summary>
         /// <param name="peopleEntity">People information</param>
-        public void AddPeople(PeopleEntity peopleEntity)
+        public void Operation(PeopleEntity peopleEntity)
         {
             if (string.IsNullOrEmpty(peopleEntity.Address))
             {

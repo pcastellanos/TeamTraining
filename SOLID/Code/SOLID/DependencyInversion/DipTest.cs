@@ -1,6 +1,11 @@
 ﻿using SOLID.DependencyInversion.Bad;
+using SOLID.DependencyInversion.Better;
+using SOLID.DependencyInversion.Better.BusinessLogic.AbstractClass;
 using SOLID.DependencyInversion.Entity;
+using SOLID.DependencyInversion.Good;
+using SOLID.DependencyInversion.Good.Enumeration;
 using System;
+using Unity;
 
 namespace SOLID.DependencyInversion
 {
@@ -18,16 +23,16 @@ namespace SOLID.DependencyInversion
             };
 
             // Bad
-            new Logic().AddPeople(peopleEntity);
+            new Logic().Operation(peopleEntity);
 
             // Good
             //var provider = new FactoryDatabaseProvider(DatabaseProvider.SqlDatabase).GetProvider();
-            //new LogicGood(provider).AddPeople(peopleEntity);
+            //new LogicGood(provider).Operation(peopleEntity);
 
             // Better
             //DependencyInjection.Configure();
             //LogicAbstractBetter logic = DependencyInjection.MainUnityContainer.Resolve<LogicAbstractBetter>();
-            //logic.AddPeople(peopleEntity);
+            //logic.Operation(peopleEntity);
 
             Console.ReadLine();
         }
