@@ -2,7 +2,7 @@
 
 namespace SOLID.InterfaceSegregation
 {
-    public class Motorcycle : ITransportation
+    public class Motorcycle : IConveyance
     {
         public void ChangeWheels()
         {

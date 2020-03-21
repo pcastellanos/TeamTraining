@@ -73,7 +73,9 @@
     <Compile Include="DependencyInversion\Good\Persistence\MongoDatabase.cs" />
     <Compile Include="DependencyInversion\Good\Persistence\SqlDatabaseGood.cs" />
     <Compile Include="InterfaceSegregation\Car.cs" />
-    <Compile Include="InterfaceSegregation\ITransportation.cs" />
+    <Compile Include="InterfaceSegregation\IMarineTransport.cs" />
+    <Compile Include="InterfaceSegregation\ISTestCase.cs" />
+    <Compile Include="InterfaceSegregation\IConveyance.cs" />
     <Compile Include="InterfaceSegregation\Motorcycle.cs" />
     <Compile Include="InterfaceSegregation\Point.cs" />
     <Compile Include="InterfaceSegregation\Ship.cs" />

@@ -59,36 +59,12 @@ namespace SOLID
             }
         }
 
+        /// <summary>
+        /// Generates a Test Case for the Interface Segregation
+        /// </summary>
         private static void InterfaceSegregation()
         {
-            Point pStart = new Point(10, 50);
-            Point pEnd = new Point(150, 59);
-
-            ITransportation car = new Car();
-            ITransportation moto = new Motorcycle();
-            ITransportation ship = new Ship();
-
-            WriteLine("Move Car");
-            car.Move(pStart, pEnd);
-            ReadLine();
-            WriteLine("changing wheels");
-            car.ChangeWheels();
-            ReadLine();
-
-            WriteLine("Move Motorcycle");
-            moto.Move(pStart, pEnd);
-            ReadLine();
-            WriteLine("changing wheels");
-            moto.ChangeWheels();
-            ReadLine();
-
-            WriteLine("Move Ship");
-            ship.Move(pStart, pEnd);
-            ReadLine();
-            WriteLine("changing wheels");
-            ship.ChangeWheels();
-            ReadLine();
-
+            ISTestCase.Start();
         }
 
         private static void OpenClosed()
