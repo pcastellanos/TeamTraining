@@ -1,11 +1,8 @@
 ﻿using SOLID.DependencyInversion.Bad;
-using SOLID.DependencyInversion.Better;
-using SOLID.DependencyInversion.Better.BusinessLogic.AbstractClass;
 using SOLID.DependencyInversion.Entity;
 using SOLID.DependencyInversion.Good;
 using SOLID.DependencyInversion.Good.Enumeration;
 using System;
-using Unity;
 
 namespace SOLID.DependencyInversion
 {
@@ -14,7 +11,8 @@ namespace SOLID.DependencyInversion
     /// </summary>
     public class DipTest
     {
-        public static void RunExampleDip() {
+        public static void RunExampleDip()
+        {
 
             var peopleEntity = new PeopleEntity
             {
@@ -28,11 +26,6 @@ namespace SOLID.DependencyInversion
             // Good
             //var provider = new FactoryDatabaseProvider(DatabaseProvider.SqlDatabase).GetProvider();
             //new LogicGood(provider).Operation(peopleEntity);
-
-            // Better
-            //DependencyInjection.Configure();
-            //LogicAbstractBetter logic = DependencyInjection.MainUnityContainer.Resolve<LogicAbstractBetter>();
-            //logic.Operation(peopleEntity);
 
             Console.ReadLine();
         }

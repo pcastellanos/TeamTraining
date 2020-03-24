@@ -56,14 +56,6 @@
   <ItemGroup>
     <Compile Include="DependencyInversion\Bad\Logic.cs" />
     <Compile Include="DependencyInversion\Bad\Persistence\SqlDatabase.cs" />
-    <Compile Include="DependencyInversion\Better\BusinessLogic\AbstractClass\LogicAbstractBetter.cs" />
-    <Compile Include="DependencyInversion\Better\BusinessLogic\LogicOneBetter.cs" />
-    <Compile Include="DependencyInversion\Better\BusinessLogic\LogicTwoBetter.cs" />
-    <Compile Include="DependencyInversion\Better\Persistence\Interfaces\IDatabaseBetter.cs" />
-    <Compile Include="DependencyInversion\Better\Persistence\MongoDatabaseBetter.cs" />
-    <Compile Include="DependencyInversion\Better\Persistence\OracleDatabaseBetter.cs" />
-    <Compile Include="DependencyInversion\Better\Persistence\SqlDatabaseBetter.cs" />
-    <Compile Include="DependencyInversion\Better\DependencyInjection.cs" />
     <Compile Include="DependencyInversion\DipTest.cs" />
     <Compile Include="DependencyInversion\Entity\PeopleEntity.cs" />
     <Compile Include="DependencyInversion\Good\Enumeration\DatabaseProvider.cs" />
