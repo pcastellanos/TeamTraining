@@ -1,50 +1,44 @@
-﻿using SOLID.Single_Responsibility.Entities;
-using SOLID.Single_Responsibility.Interfaces;
-using Unity;
+﻿using SOLID.Single_Responsibility.BadCode;
+using SOLID.Single_Responsibility.CleanCode;
+using SOLID.Single_Responsibility.CleanCode.Business;
+using SOLID.Single_Responsibility.CleanCode.Entity;
 
 namespace SOLID.Single_Responsibility
 {
     /// <summary>
     /// Class to show Single Responsibility Test Case
     /// </summary>
-    internal static class SRTestCase
+    internal class SRTestCase
     {
-        private static IEmailValidator emailValidator;
-        private static IUserValidator userValidator;
-        private static IUserCreateService userCreateService;
-
-        /// <summary>
-        /// Creates a User
-        /// </summary>
-        internal static void CreateUser()
+        //MessyCode
+        internal static void CreateEmployee()
         {
-            UserDTO user = new UserDTO();
-            user.Name = "test";
-            user.Age = 15;
-            user.Email = "test.com";
+            Employee  employee  = new Employee();
 
-            user.ValidateUser();
-            user.ValidateEmail();
-            user.SaveUser();
+            //HR request to add more data
+            employee.CreateEmployee(new Employee{ Id = 1, FirstName = "John", LastName = "Doe", Salary = 500 });
 
-            // Using Single Responsibility
-            GetInstances();
-            userValidator.IsValid(user);
-            emailValidator.Validate(user.Email);
-            userCreateService.Save(user);
+            //Financial chief requets to modify formula
+            employee.CalculatePay();
+
+            //Sales request a new report
+            employee.PrintReport(); 
         }
 
-        /// <summary>
-        /// Gets instance of the Unity Container
-        /// </summary>
-        private static void GetInstances()
+        //CleanCode
+        internal static void EmployeeProcess()
         {
-            SRDependencyInjection.Register();
-            UnityContainer container = SRDependencyInjection.Container;
+            EmployeeEntity employeeEntity = new EmployeeEntity { Id = 2, FirstName = "Jane", LastName = "Doe", Salary = 800 };
 
-            emailValidator = container.Resolve<IEmailValidator>();
-            userValidator = container.Resolve<IUserValidator>();
-            userCreateService = container.Resolve<IUserCreateService>();
+            Employees _employees = new Employees();
+            Reports _reports = new Reports();
+            Payments _payments = new Payments();
+
+            _employees.Create(employeeEntity);
+            _reports.ManagementReport(employeeEntity);
+            _payments.BonusPayment(employeeEntity);
+
         }
+
     }
 }

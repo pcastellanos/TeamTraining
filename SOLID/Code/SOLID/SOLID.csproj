@@ -76,19 +76,16 @@
     <Compile Include="Liskov\CalculateAreaBetterImplementation.cs" />
     <Compile Include="OpenClosed\BusinessLogic\BasicMessagePrinter.cs" />
     <Compile Include="OpenClosed\BusinessLogic\FriendlyMessagePrinter.cs" />
+    <Compile Include="OpenClosed\MessyCode\PDFPrinter.cs" />
     <Compile Include="OpenClosed\Services\IPrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Single Responsibility\Business\User.cs" />
-    <Compile Include="Single Responsibility\SRDependencyInjection.cs" />
+    <Compile Include="Single Responsibility\CleanCode\Business\Employees.cs" />
+    <Compile Include="Single Responsibility\CleanCode\Business\Payments.cs" />
+    <Compile Include="Single Responsibility\CleanCode\Entity\EmployeeEntity.cs" />
+    <Compile Include="Single Responsibility\CleanCode\Business\Reports.cs" />
+    <Compile Include="Single Responsibility\MessyCode\Employee.cs" />
     <Compile Include="Single Responsibility\SRTestCase.cs" />
-    <Compile Include="Single Responsibility\Validators\EmailValidator.cs" />
-    <Compile Include="Single Responsibility\Services\UserCreateService.cs" />
-    <Compile Include="Single Responsibility\Validators\UserValidator.cs" />
-    <Compile Include="Single Responsibility\Interfaces\IEmailValidator.cs" />
-    <Compile Include="Single Responsibility\Interfaces\IUserCreateService.cs" />
-    <Compile Include="Single Responsibility\Interfaces\IUserValidator.cs" />
-    <Compile Include="Single Responsibility\Entities\UserDTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

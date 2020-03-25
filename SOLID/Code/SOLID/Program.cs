@@ -6,6 +6,7 @@ using SOLID.Liskov;
 using static System.Console;
 using SOLID.InterfaceSegregation;
 using SOLID.DependencyInversion;
+using SOLID.OpenClosed.MessyCode;
 
 namespace SOLID
 {
@@ -64,11 +65,26 @@ namespace SOLID
         /// </summary>
         private static void SingleResponsibility()
         {
-            SRTestCase.CreateUser();
+            //Messy Code
+            WriteLine("Messy Code");
+            ReadLine();
+            SRTestCase.CreateEmployee();
+
+            //CleanCode
+            WriteLine("Clean Code");
+            ReadLine();
+            SRTestCase.EmployeeProcess();
         }
 
         private static void OpenClosed()
         {
+            //MessyCode
+            WriteLine("Basic implementation");
+            ReadLine();
+            PDFPrinter generatePDF = new PDFPrinter();
+            generatePDF.GenerateSurveyPDF(12);
+
+            //CleanCode
             IPrinter friendlyPrinter = new FriendlyMessagePrinter();
             WriteLine("Friendly implementation");
             ReadLine();
