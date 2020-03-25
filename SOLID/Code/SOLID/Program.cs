@@ -69,11 +69,13 @@ namespace SOLID
             WriteLine("Messy Code");
             ReadLine();
             SRTestCase.CreateEmployee();
+            ReadLine();
 
             //CleanCode
             WriteLine("Clean Code");
             ReadLine();
             SRTestCase.EmployeeProcess();
+            ReadLine();
         }
 
         private static void OpenClosed()
@@ -83,6 +85,7 @@ namespace SOLID
             ReadLine();
             PDFPrinter generatePDF = new PDFPrinter();
             generatePDF.GenerateSurveyPDF(12);
+            ReadLine();
 
             //CleanCode
             IPrinter friendlyPrinter = new FriendlyMessagePrinter();
