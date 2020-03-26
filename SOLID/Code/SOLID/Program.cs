@@ -2,11 +2,11 @@ using SOLID.OpenClosed.BusinessLogic;
 using SOLID.OpenClosed.Services;
 using SOLID.Single_Responsibility;
 using System;
-using SOLID.Liskov;
 using static System.Console;
 using SOLID.InterfaceSegregation;
 using SOLID.DependencyInversion;
 using SOLID.OpenClosed.MessyCode;
+using SOLID.Liskov;
 
 namespace SOLID
 {
@@ -102,13 +102,16 @@ namespace SOLID
 
         private static void Liskov()
         {
-            WriteLine("Bad implementation, calculate area");
-            ReadLine();
-            CalculateAreaBadImplementation.CalculateArea();
 
-            WriteLine("Good implementation, calculate area");
+            WriteLine("No Liskov Example");
+            LiskovTest liskovTest = new LiskovTest();
+            liskovTest.NoLiskovTest();
             ReadLine();
-            CalculateAreaBetterImplementation.CalculateArea();
+
+            WriteLine("Liskov Example");
+            liskovTest.LiskovTestCalc();
+            ReadLine();
+            
         }
 
         /// <summary>

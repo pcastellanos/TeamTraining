@@ -72,8 +72,12 @@
     <Compile Include="InterfaceSegregation\Motorcycle.cs" />
     <Compile Include="InterfaceSegregation\Point.cs" />
     <Compile Include="InterfaceSegregation\Ship.cs" />
-    <Compile Include="Liskov\CalculateAreaBadImplementation.cs" />
-    <Compile Include="Liskov\CalculateAreaBetterImplementation.cs" />
+    <Compile Include="Liskov\LiskovTest.cs" />
+    <Compile Include="Liskov\CalculatorExample\Calculator.cs" />
+    <Compile Include="Liskov\CalculatorExample\EvenNumbersSumCalculator.cs" />
+    <Compile Include="Liskov\CalculatorExample\SumCalculator.cs" />
+    <Compile Include="Liskov\NoLiskov\EvenNumbersSumCalculatorNoLiskov.cs" />
+    <Compile Include="Liskov\NoLiskov\SumCalculatorNoLiskov.cs" />
     <Compile Include="OpenClosed\BusinessLogic\BasicMessagePrinter.cs" />
     <Compile Include="OpenClosed\BusinessLogic\FriendlyMessagePrinter.cs" />
     <Compile Include="OpenClosed\MessyCode\PDFPrinter.cs" />
