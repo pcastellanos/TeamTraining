@@ -10,11 +10,7 @@ namespace DesignPatterns._2.Structural.Facade.Modules
         List<Benefit> list;
         public Benefits() {
 
-            list = new List<Benefit>() {
-                new Benefit { Name= "Prima Grado", Value= 200 },
-                new Benefit { Name = "Transporte", Value = 100 }
-
-            };
+            list = new Benefit().FillBenefits();
         }
 
         public List<Benefit> GetBenefitsEmployee(string employeeId) {

@@ -10,11 +10,7 @@ namespace DesignPatterns._2.Structural.Facade.Modules
         List<Incentive> list;
         public Incentives() {
 
-            list = new List<Incentive>()
-            {
-                new Incentive { Concept = "Bono por SSP",Value= 200 },
-                new Incentive { Concept = "Bono por Calculation",Value= 600 }
-            };
+            list = new Incentive().FillIncentives();
         }
 
         public List<Incentive> GetIncentivesEmployee(string employeeId) {

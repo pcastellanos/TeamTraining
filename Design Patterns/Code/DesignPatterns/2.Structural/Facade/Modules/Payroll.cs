@@ -11,13 +11,8 @@ namespace DesignPatterns._2.Structural.Facade.Modules
         List<Employee> list;
 
         public Payroll() {
-            list = new List<Employee>() {
 
-                new Employee {Id="1",Name= "David", Salary = 3000},
-                new Employee {Id="2",Name= "Paula", Salary = 5000},
-                new Employee {Id="3",Name= "Lucho", Salary = 6000},
-                new Employee {Id="4",Name= "Juan Mira", Salary = 10000}
-            };
+            list = new Employee().FillEmployees();
         }
 
 
