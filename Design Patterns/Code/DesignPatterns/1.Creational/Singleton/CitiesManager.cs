@@ -2,15 +2,15 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace DesignPatterns._1.Creational.Singleton
 {
     internal static class CitiesManager
     {
         internal static void ReadAllCities(){
-            List<City> cities = JsonConvert.DeserializeObject<List<City>>(Resource1.Cities);
-
+            List<City> cities = CitySingleton.GetInstance().Cities;
+            
             cities.ForEach(city => Console.WriteLine(city));
         }
     }
