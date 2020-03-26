@@ -8,6 +8,7 @@ using System;
 namespace DesignPatterns
 {
     using _4._Factory;
+    using DesignPatterns._1.Creational.Singleton;
 
     internal class Program
     {
@@ -109,12 +110,17 @@ namespace DesignPatterns
             Console.WriteLine("************************** Creational Design Patterns **************************");
             Console.WriteLine("Select one option to study: ");
             Console.WriteLine("1. Factory ");
+            Console.WriteLine("2. Singleton ");
 
             switch (Console.ReadLine())
             {
                 case "1":
                     FactoryTestCase.DrawShapes();
                     break;
+                case "2":
+                    CitiesManager.ReadAllCities();
+                    break;
+
             }
         }
     }
