@@ -19,7 +19,7 @@ namespace DesignPatterns {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resource1 {
@@ -57,6 +57,34 @@ namespace DesignPatterns {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///    {
+        ///        &quot;Name&quot;: &quot;Bogot\u00e1&quot;, 
+        ///        &quot;Admin&quot;: &quot;Bogot\u00e1&quot;, 
+        ///        &quot;Country&quot;: &quot;Colombia&quot;, 
+        ///        &quot;PopulationProper&quot;: &quot;6333661&quot;, 
+        ///        &quot;ISO2&quot;: &quot;CO&quot;, 
+        ///        &quot;Capital&quot;: &quot;primary&quot;, 
+        ///        &quot;Lat&quot;: &quot;4.649178&quot;, 
+        ///        &quot;Lng&quot;: &quot;-74.062827&quot;, 
+        ///        &quot;Population&quot;: &quot;7772000&quot;
+        ///    }, 
+        ///    {
+        ///        &quot;Name&quot;: &quot;Medell\u00edn&quot;, 
+        ///        &quot;Admin&quot;: &quot;Antioquia&quot;, 
+        ///        &quot;Country&quot;: &quot;Colombia&quot;, 
+        ///        &quot;PopulationProper&quot;: &quot;1999979&quot;, 
+        ///        &quot;ISO2&quot;: &quot;CO&quot;, 
+        ///        &quot;Capital&quot;: &quot;admin&quot;, 
+        ///        &quot;Lat&quot;: &quot;6.25 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Cities {
+            get {
+                return ResourceManager.GetString("Cities", resourceCulture);
             }
         }
         
